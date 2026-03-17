@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MLtasks",
+    "\\MLtasks\\tasks",
+    "\\MLtasks\\tasks\\cluster_lvl1_kmeans",
+    "\\MLtasks\\tasks\\cluster_lvl4_spectral",
+    "\\MLtasks\\tasks\\cluster_lvl5_make_blobs",
+    "\\MLtasks\\tasks\\linreg_lvl1_raw_tensors",
+    "\\MLtasks\\tasks\\linreg_lvl5_sklearn_production_new_dataset",
+    "\\MLtasks\\tasks\\linreg_lvl6_norm_eq",
+    "\\MLtasks\\tasks\\logreg_lvl4_calibration_thresholding"
+  ],
+  "SelectedNode": "\\MLtasks\\tasks\\linreg_lvl5_sklearn_production_new_dataset\\task.py",
+  "PreviewInSolutionExplorer": false
+}

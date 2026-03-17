@@ -11,7 +11,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset
-from sklearn.datasets import fetch_california_housing
+from sklearn.datasets import load_diabetes #change dataset
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LinearRegression
@@ -26,7 +26,7 @@ torch.manual_seed(42)
 np.random.seed(42)
 
 # Output directory
-OUTPUT_DIR = '/Developer/AIserver/output/tasks/linreg_lvl4_sklearn_production'
+OUTPUT_DIR = '/Developer/AIserver/output/tasks/linreg_lvl5_sklearn_production'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Device setup
@@ -38,7 +38,7 @@ def get_task_metadata():
     return {
         "task_name": "linear_regression",
         "task_type": "regression",
-        "dataset": "california_housing",
+        "dataset": "load_diabetes",
         "frameworks": ["pytorch", "sklearn"],
         "metrics": ["mse", "rmse", "r2", "mae"],
         "output_dir": OUTPUT_DIR
@@ -64,7 +64,7 @@ def make_dataloaders(test_size=0.2, batch_size=64):
     Returns train/val dataloaders and scalers.
     """
     # Load dataset
-    data = fetch_california_housing()
+    data = load_diabetes()
     X, y = data.data, data.target
     
     # Split data
@@ -473,8 +473,6 @@ def main():
     print("=" * 60)
     print("Task completed successfully!")
     print("=" * 60)
-
-
 
 
 if __name__ == "__main__":

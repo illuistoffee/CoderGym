@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\MLtasks\\tasks\\linreg_lvl5_sklearn_production_new_dataset\\task.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MLtasks\\tasks\\linreg_lvl5_sklearn_production_new_dataset\\task.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\MLtasks\\tasks\\linreg_lvl4_sklearn_production\\task.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MLtasks\\tasks\\linreg_lvl4_sklearn_production\\task.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\MLtasks\\tasks\\linreg_lvl6_norm_eq\\task.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MLtasks\\tasks\\linreg_lvl6_norm_eq\\task.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\MLtasks\\ml_tasks.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MLtasks\\ml_tasks.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "task.py",
+              "DocumentMoniker": "C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\MLtasks\\tasks\\linreg_lvl5_sklearn_production_new_dataset\\task.py",
+              "RelativeDocumentMoniker": "MLtasks\\tasks\\linreg_lvl5_sklearn_production_new_dataset\\task.py",
+              "ToolTip": "C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\MLtasks\\tasks\\linreg_lvl5_sklearn_production_new_dataset\\task.py",
+              "RelativeToolTip": "MLtasks\\tasks\\linreg_lvl5_sklearn_production_new_dataset\\task.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-16T18:16:42.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "task.py",
+              "DocumentMoniker": "C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\MLtasks\\tasks\\linreg_lvl6_norm_eq\\task.py",
+              "RelativeDocumentMoniker": "MLtasks\\tasks\\linreg_lvl6_norm_eq\\task.py",
+              "ToolTip": "C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\MLtasks\\tasks\\linreg_lvl6_norm_eq\\task.py",
+              "RelativeToolTip": "MLtasks\\tasks\\linreg_lvl6_norm_eq\\task.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-13T04:13:06.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "task.py",
+              "DocumentMoniker": "C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\MLtasks\\tasks\\linreg_lvl4_sklearn_production\\task.py",
+              "RelativeDocumentMoniker": "MLtasks\\tasks\\linreg_lvl4_sklearn_production\\task.py",
+              "ToolTip": "C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\MLtasks\\tasks\\linreg_lvl4_sklearn_production\\task.py",
+              "RelativeToolTip": "MLtasks\\tasks\\linreg_lvl4_sklearn_production\\task.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-10T17:49:49.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ml_tasks.json",
+              "DocumentMoniker": "C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\MLtasks\\ml_tasks.json",
+              "RelativeDocumentMoniker": "MLtasks\\ml_tasks.json",
+              "ToolTip": "C:\\Users\\toffe\\Documents\\School\\CMPE188\\CoderGym\\MLtasks\\ml_tasks.json",
+              "RelativeToolTip": "MLtasks\\ml_tasks.json",
+              "ViewState": "AgIAAF0AAAAAAAAAAADwv3EAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-10T08:34:21.701Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
