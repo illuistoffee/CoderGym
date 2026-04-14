@@ -883,6 +883,23 @@
       "requirements": {
         "validation": "AUC/AP reported with deterministic sampling."
       }
+    },
+    {
+      "series": "Neural Networks (MLP)",
+      "level": 5,
+      "id": "mlp_lvl5_moons_residual",
+      "algorithm": "Residual MLP Classifier (AdamW + Label Smoothing)",
+      "description": "Train a small residual MLP on sklearn two-moons data using PyTorch, AdamW, cosine LR decay, gradient clipping, and label smoothing. The single task.py file must train, evaluate on train and validation splits, save artifacts, print metrics, and exit non-zero if thresholds fail.",
+      "interface_protocol": "pytorch_task_v1",
+      "requirements": {
+        "data": "Use sklearn.datasets.make_moons with noise and an 80/20 train-validation split. Standardize features using train-set statistics.",
+        "implementation": "Use torch.nn.Module with at least one residual block, AdamW optimizer, cosine annealing scheduler, gradient clipping, and CrossEntropyLoss with label smoothing.",
+        "evaluation": "The evaluate() function must compute and return MSE, R2 score, accuracy, precision, recall, and F1 on the VALIDATION split.",
+        "artifacts": "Save a model checkpoint and a metrics JSON file under tasks/<task_id>/artifacts/.",
+        "main_block": "The if __name__ == '__main__' block must train the model, evaluate on BOTH train and validation splits, print all metrics clearly as JSON, assert validation accuracy >= 0.92, validation R2 >= 0.60, and validation MSE <= 0.10, then exit 0 on success or non-zero on failure.",
+        "output": "Return dict with loss history, validation metric history, final train/validation metrics, and artifact paths."
+      }
     }
+
   ]
 }
