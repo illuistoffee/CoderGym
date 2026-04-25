@@ -899,6 +899,61 @@
         "main_block": "The if __name__ == '__main__' block must train the model, evaluate on BOTH train and validation splits, print all metrics clearly as JSON, assert validation accuracy >= 0.92, validation R2 >= 0.60, and validation MSE <= 0.10, then exit 0 on success or non-zero on failure.",
         "output": "Return dict with loss history, validation metric history, final train/validation metrics, and artifact paths."
       }
+    },
+    {
+      "series": "Linear Regression",
+      "level": 7,
+      "id": "linreg_lvl7_mlp_nonlinear_regression",
+      "algorithm": "Neural Network Regression (MLP vs Linear Baseline)",
+      "description": "Implement a PyTorch MLP regressor and compare it against a single-layer linear regression baseline on a nonlinear dataset. Use the same pytorch_task_v1 protocol and make the script self-verifying.",
+      "interface_protocol": "pytorch_task_v1",
+      "requirements": {
+        "data": "Synthetic nonlinear regression dataset, Split into 80% train / 20% validation.",
+        "implementation": "Build two PyTorch models in the same task.py: (1) a linear baseline using nn.Linear, and (2) an MLP using nn.Sequential with at least one hidden layer and nonlinear activation such as ReLU or Tanh.",
+        "training": "Train both models with torch.optim.Adam or AdamW and MSELoss. Use reproducible seeds and device-agnostic code.",
+        "evaluation": "The evaluate() function must compute and return MSE and R2 score on the VALIDATION split for both models, plus a comparison metric showing how much the MLP improves over the linear baseline.",
+        "comparison": "Report both train and validation metrics clearly. The script must assert that the MLP outperforms the linear baseline on validation by a meaningful margin on the nonlinear dataset.",
+        "artifacts": "Save a prediction-vs-target plot and a loss curve plot for both models.",
+        "main_block": "The if __name__ == '__main__' block must train both models, evaluate on BOTH train and validation splits, print all metrics clearly, compare the two approaches, assert quality thresholds, and exit 0 on success or non-zero on failure.",
+        "validation": "Assert validation R2 for the MLP > 0.90 and assert the MLP validation R2 exceeds the linear baseline by at least 0.10 on the chosen nonlinear dataset.",
+        "output": "Return dict with linear_metrics, mlp_metrics, loss_history for both models, and comparison summary."
+      }
+    },
+    {
+      "series": "Neural Networks (MLP)",
+      "level": 6,
+      "id": "mlp_lvl6_make_moons_simple",
+      "algorithm": "Simple MLP on make_moons",
+      "description": "Train a small PyTorch MLP classifier on the sklearn make_moons dataset. Keep the implementation simple, self-contained, and self-verifying using the pytorch_task_v1 protocol.",
+      "interface_protocol": "pytorch_task_v1",
+      "requirements": {
+        "data": "Use sklearn.datasets.make_moons with noise. Split into 80% train / 20% validation.",
+        "implementation": "Implement a small nn.Sequential MLP with at least one hidden layer and ReLU activation. Use CrossEntropyLoss and Adam.",
+        "training": "Use reproducible seeds and device-agnostic PyTorch code. Keep training short and simple.",
+        "evaluation": "The evaluate() function must compute and return validation MSE, R2 score, accuracy, precision, recall, and F1.",
+        "artifacts": "Save a decision boundary plot and a metrics.json file.",
+        "main_block": "The if __name__ == '__main__' block must train the model, evaluate on BOTH train and validation splits, print all metrics clearly, assert quality thresholds, and exit 0 on success or non-zero on failure.",
+        "validation": "Assert validation accuracy > 0.90 and validation F1 > 0.90.",
+        "output": "Return dict with loss_history, train_metrics, val_metrics, and artifact paths."
+      }
+    },
+    {
+      "series": "Neural Networks (MLP)",
+      "level": 7,
+      "id": "mlp_lvl7_make_blobs_simple",
+      "algorithm": "MLP Classification (Blobs Dataset)",
+      "description": "Train a simple neural network classifier on a synthetic blobs dataset using PyTorch. Focus on basic MLP training and evaluation.",
+      "interface_protocol": "pytorch_task_v1",
+      "requirements": {
+        "data": "Use sklearn.datasets.make_blobs with multiple centers. Split into 80% train / 20% validation.",
+        "implementation": "Build a small MLP using nn.Sequential with at least one hidden layer and ReLU activation.",
+        "training": "Use CrossEntropyLoss and Adam optimizer. Train for a small number of epochs with reproducible seeds.",
+        "evaluation": "The evaluate() function must compute accuracy, precision, recall, F1 score, MSE, and R2 score on the VALIDATION split.",
+        "visualization": "Save a decision boundary plot and training loss curve.",
+        "main_block": "The script must train the model, evaluate on BOTH train and validation splits, print all metrics clearly, and exit with sys.exit(exit_code).",
+        "validation": "Assert validation accuracy > 0.90 and validation F1 > 0.90.",
+        "output": "Return dict with metrics and loss history."
+      }
     }
 
   ]
